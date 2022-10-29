@@ -1,0 +1,4 @@
+com\paypal\bfs\test\bookingserv\api\BookingResource.class
+com\paypal\bfs\test\bookingserv\api\model\Address.class
+com\paypal\bfs\test\bookingserv\repo\BookingRepo.class
+com\paypal\bfs\test\bookingserv\api\model\Booking.class

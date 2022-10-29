@@ -1,0 +1,93 @@
+{
+  "title": "Booking resource",
+  "description": "Booking resource object",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "description": "Booking id",
+      "type": "integer"
+    },
+    "first_name": {
+      "description": "First name",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "required": true
+    },
+    "last_name": {
+      "description": "Last name",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "required": true
+    },
+    "date_of_birth": {
+      "description": "DOB",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "required": true
+    },
+    "checkin_datetime": {
+      "description": "Checking datetime",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "required": true
+    },
+    "checkout_datetime": {
+      "description": "Checkout datetime",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "required": true
+    },
+    "total_price": {
+      "description": "total price",
+      "type": "integer",
+      "required": true
+    },
+    "deposit": {
+      "description": "Checking date",
+      "type": "integer",
+      "required": true
+    },
+    "address" : {
+      "description": "Address Object",
+      "type": "object",
+      "required": true,
+      "properties": {
+        "id": {
+          "description": "Address id",
+          "type": "integer"
+        },
+        "line1": {
+          "description": "Line 1",
+          "type": "string",
+          "required": true
+        },
+        "line2": {
+          "description": "Line 2",
+          "type": "string"
+        },
+        "city": {
+          "description": "City",
+          "type": "string",
+          "required": true
+        },
+        "state": {
+          "description": "State",
+          "type": "string",
+          "required": true
+        },
+        "zip_code": {
+          "description": "Zip Code",
+          "type": "integer",
+          "required": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
